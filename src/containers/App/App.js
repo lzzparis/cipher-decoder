@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from '../../static/logo.svg';
+import PropTypes from 'prop-types';
 import classes from './App.module.scss';
 
-function App() {
+function App({ SolverComponent }) {
   return (
-    <div className={classes.App}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.container}>
+      <SolverComponent />
     </div>
   );
 }
+
+App.propTypes = {
+  SolverComponent: PropTypes.func,
+};
 
 export default App;
