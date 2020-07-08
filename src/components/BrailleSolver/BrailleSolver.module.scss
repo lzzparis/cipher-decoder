@@ -1,0 +1,24 @@
+
+.checkdot {
+  height: 20px;
+  width: 20px;
+  margin: 30px;
+}
+
+.checkdot:after, .checkdot:checked:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 4px solid white;
+  background-color: pink;
+
+}
+
+.checkdot:checked:after {
+  background-color: white;
+}

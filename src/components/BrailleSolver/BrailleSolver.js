@@ -5,12 +5,9 @@ import classes from './BrailleSolver.module.scss';
 
 const setterGetter = (valX, setValX) => () => setValX(getBinary(!valX));
 
-function Checkbox({ value, stateHandler }) {
+function Checkdot({ value, stateHandler, className }) {
   return (
-    <>
-      <input type="checkbox" value={value} onChange={setterGetter(value, stateHandler)} />
-      <label className="checkbox" />
-    </>
+    <input className={className} type="checkbox" value={value} onChange={setterGetter(value, stateHandler)} />
   );
 }
 
@@ -46,16 +43,16 @@ function BrailleSolver() {
       <div className={classes.inputs}>
         <form id="braille-form">
           <div className={classes.row}>
-            <Checkbox value={val5} stateHandler={setVal5} />
-            <Checkbox value={val4} stateHandler={setVal4} />
+            <Checkdot value={val5} stateHandler={setVal5} className={classes.checkdot} />
+            <Checkdot value={val4} stateHandler={setVal4} className={classes.checkdot} />
           </div>
           <div className={classes.row}>
-            <Checkbox value={val3} stateHandler={setVal3} />
-            <Checkbox value={val2} stateHandler={setVal2} />
+            <Checkdot value={val3} stateHandler={setVal3} className={classes.checkdot} />
+            <Checkdot value={val2} stateHandler={setVal2} className={classes.checkdot} />
           </div>
           <div className={classes.row}>
-            <Checkbox value={val1} stateHandler={setVal1} />
-            <Checkbox value={val0} stateHandler={setVal0} />
+            <Checkdot value={val1} stateHandler={setVal1} className={classes.checkdot} />
+            <Checkdot value={val0} stateHandler={setVal0} className={classes.checkdot} />
           </div>
           <button type="submit" onClick={getResult}>Submit</button>
           <button type="reset" onClick={clearInputs}>Reset</button>
@@ -66,9 +63,10 @@ function BrailleSolver() {
   );
 }
 
-Checkbox.propTypes = {
+Checkdot.propTypes = {
   value: PropTypes.number.isRequired,
   stateHandler: PropTypes.func.isRequired,
+  className: PropTypes.string,
 };
 
 export default BrailleSolver;
