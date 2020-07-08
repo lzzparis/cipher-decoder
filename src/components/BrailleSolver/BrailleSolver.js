@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { lookupBraille, getBinary } from './BrailleSolver.utils';
 import classes from './BrailleSolver.module.scss';
 
 const setterGetter = (valX, setValX) => () => setValX(getBinary(!valX));
 
-function Checkbox ({ value, stateHandler }) {
+function Checkbox({ value, stateHandler }) {
   return (
     <input type="checkbox" value={value} onChange={setterGetter(value, stateHandler)} />
   );
@@ -63,8 +63,9 @@ function BrailleSolver() {
   );
 }
 
-// BrailleSolver.propTypes = {
-//
-// };
+Checkbox.propTypes = {
+  value: PropTypes.number.isRequired,
+  stateHandler: PropTypes.func.isRequired,
+};
 
 export default BrailleSolver;

@@ -31,5 +31,8 @@ module.exports = {
     'no-return-await': 2,
     'semi': 2,
     'no-underscore-dangle': 1,
+    'react/button-has-type': ['error', {
+      reset: true,
+    }],
   }
 }
