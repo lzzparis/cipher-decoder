@@ -7,7 +7,10 @@ const setterGetter = (valX, setValX) => () => setValX(getBinary(!valX));
 
 function Checkbox({ value, stateHandler }) {
   return (
-    <input type="checkbox" value={value} onChange={setterGetter(value, stateHandler)} />
+    <>
+      <input type="checkbox" value={value} onChange={setterGetter(value, stateHandler)} />
+      <label className="checkbox" />
+    </>
   );
 }
 
