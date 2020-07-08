@@ -16,7 +16,6 @@ export default compose(
     },
   ),
   withProps(({ selectedSolver }) => {
-    console.log('lzz--', { selectedSolver, BrailleSolver });
     switch (selectedSolver) {
       case SOLVER_BRAILLE:
         return { SolverComponent: BrailleSolver };
