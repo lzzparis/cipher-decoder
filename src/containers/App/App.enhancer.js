@@ -18,9 +18,9 @@ export default compose(
   withProps(({ selectedSolver }) => {
     switch (selectedSolver) {
       case SOLVER_BRAILLE:
-        return { SolverComponent: BrailleSolver };
+        return { SolverComponent: BrailleSolver, themeColor: 'pink' };
       default:
-        return { SolverComponent: BrailleSolver };
+        return { SolverComponent: BrailleSolver, themeColor: 'pink' };
     }
   }),
 );

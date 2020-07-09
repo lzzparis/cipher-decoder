@@ -11,7 +11,7 @@ function Checkdot({ value, stateHandler, className }) {
   );
 }
 
-function BrailleSolver() {
+function BrailleSolver({ themeColor }) {
   const [val0, setVal0] = useState(0);
   const [val1, setVal1] = useState(0);
   const [val2, setVal2] = useState(0);
@@ -39,7 +39,8 @@ function BrailleSolver() {
 
   return (
     <div className={classes.container}>
-      <h1>BrailleSolver</h1>
+      <h1>Braille Solver</h1>
+      <p className={classes.result}>{result}</p>
       <div className={classes.inputs}>
         <form id="braille-form">
           <div className={classes.row}>
@@ -54,10 +55,11 @@ function BrailleSolver() {
             <Checkdot value={val1} stateHandler={setVal1} className={classes.checkdot} />
             <Checkdot value={val0} stateHandler={setVal0} className={classes.checkdot} />
           </div>
-          <button type="submit" onClick={getResult}>Submit</button>
-          <button type="reset" onClick={clearInputs}>Reset</button>
+          <div className={classes.row}>
+            <button type="submit" onClick={getResult} style={{ color: themeColor }}>Submit</button>
+            <button type="reset" onClick={clearInputs} style={{ color: themeColor }}>Reset</button>
+          </div>
         </form>
-        <h2>{result}</h2>
       </div>
     </div>
   );
