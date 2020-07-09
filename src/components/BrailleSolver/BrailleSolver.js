@@ -56,8 +56,8 @@ function BrailleSolver({ themeColor }) {
             <Checkdot value={val0} stateHandler={setVal0} className={classes.checkdot} />
           </div>
           <div className={classes.row}>
-            <button type="submit" onClick={getResult} style={{ color: themeColor }}>Submit</button>
             <button type="reset" onClick={clearInputs} style={{ color: themeColor }}>Reset</button>
+            <button type="submit" onClick={getResult} style={{ color: themeColor }}>Submit</button>
           </div>
         </form>
       </div>
