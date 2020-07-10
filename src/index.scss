@@ -16,7 +16,16 @@ h1, p {
   color: white;
 }
 
+.roundedCorners {
+  border-radius: 8px;
+}
+
+.circle {
+  border-radius: 1000px;
+}
+
 button {
+  @extend .roundedCorners;
   padding: 1rem;
   background-color: white;
   font-family: sans-serif;
@@ -24,7 +33,6 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   border: 3px solid white;
-  border-radius: 8px;
   margin: 1rem 0.5rem;
 }
 
@@ -37,6 +45,15 @@ button:focus {
   border: 3px dotted #aaa;
 }
 
-input[type=text] {
-  font-size: 3rem;
+.result {
+  margin: 0;
+  font-size: 16vh;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }

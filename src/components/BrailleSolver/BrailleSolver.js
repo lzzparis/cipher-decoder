@@ -40,22 +40,22 @@ function BrailleSolver({ themeColor }) {
   return (
     <div className={classes.container}>
       <h1>Braille Solver</h1>
-      <p className={classes.result}>{result}</p>
+      <p className="result">{result}</p>
       <div className={classes.inputs}>
         <form id="braille-form">
-          <div className={classes.row}>
+          <div className="row">
             <Checkdot value={val5} stateHandler={setVal5} className={classes.checkdot} />
             <Checkdot value={val4} stateHandler={setVal4} className={classes.checkdot} />
           </div>
-          <div className={classes.row}>
+          <div className="row">
             <Checkdot value={val3} stateHandler={setVal3} className={classes.checkdot} />
             <Checkdot value={val2} stateHandler={setVal2} className={classes.checkdot} />
           </div>
-          <div className={classes.row}>
+          <div className="row">
             <Checkdot value={val1} stateHandler={setVal1} className={classes.checkdot} />
             <Checkdot value={val0} stateHandler={setVal0} className={classes.checkdot} />
           </div>
-          <div className={classes.row}>
+          <div className="row">
             <button className="outline" type="reset" onClick={clearInputs}>Reset</button>
             <button type="submit" onClick={getResult} style={{ color: themeColor }}>Submit</button>
           </div>
