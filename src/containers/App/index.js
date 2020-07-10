@@ -1,3 +1,4 @@
 import App from './App';
+import enhancer from './App.enhancer';
 
-export default App;
+export default enhancer(App);

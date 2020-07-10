@@ -1,0 +1,55 @@
+$checkdotSize: 3vh;
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result {
+  margin: 0;
+  font-size: $checkdotSize * 6;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+}
+
+.inputs {
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+
+.checkdot {
+  height: $checkdotSize;
+  width: $checkdotSize;
+  margin: calc(#{$checkdotSize} * 2);
+  &:focus {
+    outline: none;
+  }
+}
+
+.checkdot:after, .checkdot:checked:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: calc(-#{$checkdotSize}/2);
+  left: calc(-#{$checkdotSize}/2);
+  width: calc(#{$checkdotSize}*2);
+  height: calc(#{$checkdotSize}*2);
+  border-radius: 1000px;
+  border: calc(#{$checkdotSize}/5) solid white;
+  background-color: pink;
+}
+
+.checkdot:checked:after {
+  background-color: white;
+}

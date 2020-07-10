@@ -1,0 +1,80 @@
+export const encodings = {
+  A: {
+    latin: 'A', brailleDots: '', brailleBin: '100000', decimal: 1, binary: '00001', ternary: '001', hex: '01', morse: '.-', semaphore: [], nato: 'alfa', pigpen: '',
+  },
+  B: {
+    latin: 'B', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'bravo', pigpen: '',
+  },
+  C: {
+    latin: 'C', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'charlie', pigpen: '',
+  },
+  D: {
+    latin: 'D', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'delta', pigpen: '',
+  },
+  E: {
+    latin: 'E', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'echo', pigpen: '',
+  },
+  F: {
+    latin: 'F', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'foxtrot', pigpen: '',
+  },
+  G: {
+    latin: 'G', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'golf', pigpen: '',
+  },
+  H: {
+    latin: 'H', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'hotel', pigpen: '',
+  },
+  I: {
+    latin: 'I', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'india', pigpen: '',
+  },
+  J: {
+    latin: 'J', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'juliett', pigpen: '',
+  },
+  K: {
+    latin: 'K', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'kilo', pigpen: '',
+  },
+  L: {
+    latin: 'L', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'lima', pigpen: '',
+  },
+  M: {
+    latin: 'M', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'mike', pigpen: '',
+  },
+  N: {
+    latin: 'N', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'november', pigpen: '',
+  },
+  O: {
+    latin: 'O', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'oscar', pigpen: '',
+  },
+  P: {
+    latin: 'P', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'papa', pigpen: '',
+  },
+  Q: {
+    latin: 'Q', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'quebec', pigpen: '',
+  },
+  R: {
+    latin: 'R', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'romeo', pigpen: '',
+  },
+  S: {
+    latin: 'S', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'sierra', pigpen: '',
+  },
+  T: {
+    latin: 'T', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'tango', pigpen: '',
+  },
+  U: {
+    latin: 'U', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'uniform', pigpen: '',
+  },
+  V: {
+    latin: 'V', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'victor', pigpen: '',
+  },
+  W: {
+    latin: 'W', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'whiskey', pigpen: '',
+  },
+  X: {
+    latin: 'X', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'x-ray', pigpen: '',
+  },
+  Y: {
+    latin: 'Y', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'yankee', pigpen: '',
+  },
+  Z: {
+    latin: 'Z', brailleDots: '', brailleBin: '', decimal: '', binary: '', ternary: '', hex: '', morse: '', semaphore: [], nato: 'zulu', pigpen: '',
+  },
+};
