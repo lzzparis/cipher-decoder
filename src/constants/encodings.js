@@ -33,7 +33,7 @@ export const latinToBraille = {
   },
   I: {
     brailleDots: '',
-    brailleBin: '01100',
+    brailleBin: '011000',
   },
   J: {
     brailleDots: '',

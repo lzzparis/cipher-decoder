@@ -34,5 +34,6 @@ module.exports = {
     'react/button-has-type': ['error', {
       reset: true,
     }],
+    'quote-props': 0,
   }
 }

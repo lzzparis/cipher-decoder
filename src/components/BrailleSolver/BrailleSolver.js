@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { lookupBraille, getBinary } from './BrailleSolver.utils';
+import { brailleToLatin, getBinary } from './BrailleSolver.utils';
 import classes from './BrailleSolver.module.scss';
 
 const setterGetter = (valX, setValX) => () => setValX(getBinary(!valX));
@@ -24,7 +24,7 @@ function BrailleSolver({ themeColor }) {
   const getResult = (e) => {
     e.preventDefault();
     const fullVal = [val5, val4, val3, val2, val1, val0].join('');
-    setResult(lookupBraille(fullVal) || 'Not a valid Braille encoding');
+    setResult(brailleToLatin[fullVal] || 'n/a');
   };
 
   const clearInputs = () => {
@@ -64,6 +64,10 @@ function BrailleSolver({ themeColor }) {
     </div>
   );
 }
+
+BrailleSolver.propTypes = {
+  themeColor: PropTypes.string,
+};
 
 Checkdot.propTypes = {
   value: PropTypes.number.isRequired,
