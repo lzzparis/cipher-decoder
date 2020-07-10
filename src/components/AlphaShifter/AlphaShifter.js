@@ -12,8 +12,9 @@ function AlphaShifter({ themeColor }) {
     const uppercaseLetter = letter.toUpperCase();
     const startingIndex = alphaIndexes[uppercaseLetter];
     const operation = +countParsed.join('');
-    const endingIndex = startingIndex + operation;
-    const newLetter = Number.isNaN(endingIndex) ? 'Invalid' : alphaArray[endingIndex];
+    const operatedIndex = startingIndex + operation;
+    const finalIndex = operatedIndex < 0 ? alphaArray.length + operatedIndex : operatedIndex;
+    const newLetter = Number.isNaN(finalIndex) ? 'Invalid' : alphaArray[finalIndex];
 
     setResult(newLetter);
   };
