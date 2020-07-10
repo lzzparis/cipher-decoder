@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: pink;
 }
 
 code {
@@ -36,4 +35,8 @@ button {
 
 button:focus {
   border: 3px dotted #aaa;
+}
+
+input[type=text] {
+  font-size: 3rem;
 }
