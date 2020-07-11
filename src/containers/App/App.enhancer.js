@@ -6,7 +6,7 @@ import {
   SOLVER_ALPHA_SHIFT,
 } from '../../constants';
 import BrailleSolver from '../../components/BrailleSolver';
-import AlphaShifter from '../../components/AlphaShifter';
+import AlphaShifter from '../../components/AlphaShifterSeparate';
 
 export default compose(
   withStateHandlers(
