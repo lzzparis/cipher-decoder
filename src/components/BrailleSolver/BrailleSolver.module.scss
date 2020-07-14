@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 $checkdotSize: 3vh;
 
 
@@ -22,10 +24,6 @@ $checkdotSize: 3vh;
   padding: 2rem;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
 
 
 .checkdot {
@@ -38,6 +36,7 @@ $checkdotSize: 3vh;
 }
 
 .checkdot:after, .checkdot:checked:after {
+  @extend .circle;
   content: '';
   display: inline-block;
   position: relative;
@@ -45,7 +44,6 @@ $checkdotSize: 3vh;
   left: calc(-#{$checkdotSize}/2);
   width: calc(#{$checkdotSize}*2);
   height: calc(#{$checkdotSize}*2);
-  border-radius: 1000px;
   border: calc(#{$checkdotSize}/5) solid white;
   background-color: pink;
 }
