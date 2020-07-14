@@ -56,7 +56,7 @@ function BrailleToLatin({ themeColor }) {
             <Checkdot value={val0} stateHandler={setVal0} className={classes.checkdot} />
           </div>
           <div className="row">
-            <button className="outline" type="reset" onClick={clearInputs}>Reset</button>
+            <button className="buttonOutline" type="reset" onClick={clearInputs}>Reset</button>
             <button type="submit" onClick={getResult} style={{ color: themeColor }}>Submit</button>
           </div>
         </form>
