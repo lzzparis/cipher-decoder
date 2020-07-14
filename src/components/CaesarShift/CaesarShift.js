@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { alphaIndexes, alphaArray } from './AlphaShifter.utils';
-import classes from './AlphaShifter.module.scss';
+import { alphaIndexes, alphaArray } from './CaesarShift.utils';
+import classes from './CaesarShift.module.scss';
 
-function AlphaShifter({ themeColor }) {
+function CaesarShift({ themeColor }) {
   const [letter, setLetter] = useState('');
   const [symbol, setSymbol] = useState('+');
   const [count, setCount] = useState('');
@@ -28,10 +28,10 @@ function AlphaShifter({ themeColor }) {
 
   return (
     <div className={classes.container}>
-      <h1>Alpha Shifter</h1>
+      <h1>Caesar Shift</h1>
       <p className="result">{result}</p>
       <div className={classes.inputs}>
-        <form id="alpha-shifter-form">
+        <form id="caesar-shift-form">
           <div className="row">
             <label className={classes.label}>
               <input type="text" value={letter} onChange={(e) => setLetter(e.target.value)} />
@@ -56,4 +56,4 @@ function AlphaShifter({ themeColor }) {
   );
 }
 
-export default AlphaShifter;
+export default CaesarShift;
