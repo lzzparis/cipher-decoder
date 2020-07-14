@@ -16,6 +16,9 @@ h1, p {
   color: white;
 }
 
+$borderColor: #aaa;
+$borderWidth: 3px;
+
 .roundedCorners {
   border-radius: 8px;
 }
@@ -32,7 +35,7 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  border: 3px solid white;
+  border: $borderWidth solid white;
   margin: 1rem 0.5rem;
 }
 
@@ -42,8 +45,20 @@ button {
 }
 
 button:focus {
-  border: 3px dotted #aaa;
+  border: $borderWidth dotted $borderColor;
 }
+
+input[type=text], select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  width: 5rem;
+  @extend .roundedCorners;
+  background-color: rgba(white, 0.8);
+  border: $borderWidth solid $borderColor;
+}
+
 
 .result {
   margin: 0;
