@@ -5,7 +5,7 @@ import {
   SOLVER_SEMAPHORE,
   SOLVER_CAESAR_SHIFT,
 } from '../../constants';
-import BrailleSolver from '../../components/BrailleSolver';
+import BrailleToLatin from '../../components/BrailleToLatin';
 import CaesarShift from '../../components/CaesarShift';
 
 export default compose(
@@ -21,11 +21,11 @@ export default compose(
   withProps(({ selectedSolver }) => {
     switch (selectedSolver) {
       case SOLVER_BRAILLE:
-        return { SolverComponent: BrailleSolver, themeColor: 'pink' };
+        return { SolverComponent: BrailleToLatin, themeColor: 'pink' };
       case SOLVER_CAESAR_SHIFT:
         return { SolverComponent: CaesarShift, themeColor: '#c8a2c8' };
       default:
-        return { SolverComponent: BrailleSolver, themeColor: 'pink' };
+        return { SolverComponent: BrailleToLatin, themeColor: 'pink' };
     }
   }),
 );

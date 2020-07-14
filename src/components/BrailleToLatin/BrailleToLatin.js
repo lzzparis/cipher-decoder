@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { brailleToLatin, getBinary } from './BrailleSolver.utils';
-import classes from './BrailleSolver.module.scss';
+import { brailleToLatin, getBinary } from './BrailleToLatin.utils';
+import classes from './BrailleToLatin.module.scss';
 
 const setterGetter = (valX, setValX) => () => setValX(getBinary(!valX));
 
@@ -11,7 +11,7 @@ function Checkdot({ value, stateHandler, className }) {
   );
 }
 
-function BrailleSolver({ themeColor }) {
+function BrailleToLatin({ themeColor }) {
   const [val0, setVal0] = useState(0);
   const [val1, setVal1] = useState(0);
   const [val2, setVal2] = useState(0);
@@ -65,7 +65,7 @@ function BrailleSolver({ themeColor }) {
   );
 }
 
-BrailleSolver.propTypes = {
+BrailleToLatin.propTypes = {
   themeColor: PropTypes.string,
 };
 
@@ -75,4 +75,4 @@ Checkdot.propTypes = {
   className: PropTypes.string,
 };
 
-export default BrailleSolver;
+export default BrailleToLatin;
