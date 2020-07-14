@@ -1,5 +1,3 @@
-export * from './encodings';
-
 export const SOLVER_BRAILLE = 'braille';
 export const SOLVER_MORSE = 'morse';
 export const SOLVER_SEMAPHORE = 'semaphore';
