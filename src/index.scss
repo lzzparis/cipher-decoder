@@ -29,6 +29,7 @@ $borderWidth: 3px;
 
 button {
   @extend .roundedCorners;
+  margin: 1rem 0.5rem;
   padding: 1rem;
   background-color: white;
   font-family: sans-serif;
@@ -36,12 +37,30 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   border: $borderWidth solid white;
-  margin: 1rem 0.5rem;
 }
 
-.outline {
+.buttonOutline {
   background-color: rgba(0,0,0,0);
   color: white;
+}
+
+.navButton {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(white,0);
+  color: white;
+
+  &Selected {
+    @extend .navButton;
+    background-color: rgba(white,0.3);
+  }
+  &Disabled {
+    @extend .navButton;
+    background-color: #444;
+  }
 }
 
 button:focus {
