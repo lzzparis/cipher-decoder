@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cipher-solver/static/css/main.e83ad08a.chunk.css",
+    "main.js": "/cipher-solver/static/js/main.c5e58281.chunk.js",
+    "main.js.map": "/cipher-solver/static/js/main.c5e58281.chunk.js.map",
+    "runtime-main.js": "/cipher-solver/static/js/runtime-main.2e120b3a.js",
+    "runtime-main.js.map": "/cipher-solver/static/js/runtime-main.2e120b3a.js.map",
+    "static/js/2.0fdc65cb.chunk.js": "/cipher-solver/static/js/2.0fdc65cb.chunk.js",
+    "static/js/2.0fdc65cb.chunk.js.map": "/cipher-solver/static/js/2.0fdc65cb.chunk.js.map",
+    "index.html": "/cipher-solver/index.html",
+    "precache-manifest.73b56aeecbe1602ae4cec46b6ebf6681.js": "/cipher-solver/precache-manifest.73b56aeecbe1602ae4cec46b6ebf6681.js",
+    "service-worker.js": "/cipher-solver/service-worker.js",
+    "static/css/main.e83ad08a.chunk.css.map": "/cipher-solver/static/css/main.e83ad08a.chunk.css.map",
+    "static/js/2.0fdc65cb.chunk.js.LICENSE.txt": "/cipher-solver/static/js/2.0fdc65cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e120b3a.js",
+    "static/js/2.0fdc65cb.chunk.js",
+    "static/css/main.e83ad08a.chunk.css",
+    "static/js/main.c5e58281.chunk.js"
+  ]
+}
