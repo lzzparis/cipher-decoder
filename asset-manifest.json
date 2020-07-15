@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cipher-solver/static/css/main.e83ad08a.chunk.css",
-    "main.js": "/cipher-solver/static/js/main.c5e58281.chunk.js",
-    "main.js.map": "/cipher-solver/static/js/main.c5e58281.chunk.js.map",
-    "runtime-main.js": "/cipher-solver/static/js/runtime-main.2e120b3a.js",
-    "runtime-main.js.map": "/cipher-solver/static/js/runtime-main.2e120b3a.js.map",
-    "static/js/2.0fdc65cb.chunk.js": "/cipher-solver/static/js/2.0fdc65cb.chunk.js",
-    "static/js/2.0fdc65cb.chunk.js.map": "/cipher-solver/static/js/2.0fdc65cb.chunk.js.map",
-    "index.html": "/cipher-solver/index.html",
-    "precache-manifest.73b56aeecbe1602ae4cec46b6ebf6681.js": "/cipher-solver/precache-manifest.73b56aeecbe1602ae4cec46b6ebf6681.js",
-    "service-worker.js": "/cipher-solver/service-worker.js",
-    "static/css/main.e83ad08a.chunk.css.map": "/cipher-solver/static/css/main.e83ad08a.chunk.css.map",
-    "static/js/2.0fdc65cb.chunk.js.LICENSE.txt": "/cipher-solver/static/js/2.0fdc65cb.chunk.js.LICENSE.txt"
+    "main.css": "/cipher-decoder/static/css/main.e83ad08a.chunk.css",
+    "main.js": "/cipher-decoder/static/js/main.4df1e76f.chunk.js",
+    "main.js.map": "/cipher-decoder/static/js/main.4df1e76f.chunk.js.map",
+    "runtime-main.js": "/cipher-decoder/static/js/runtime-main.6b3b8511.js",
+    "runtime-main.js.map": "/cipher-decoder/static/js/runtime-main.6b3b8511.js.map",
+    "static/js/2.c06d01a7.chunk.js": "/cipher-decoder/static/js/2.c06d01a7.chunk.js",
+    "static/js/2.c06d01a7.chunk.js.map": "/cipher-decoder/static/js/2.c06d01a7.chunk.js.map",
+    "index.html": "/cipher-decoder/index.html",
+    "precache-manifest.7d1f97344800b0a90225bc506474be57.js": "/cipher-decoder/precache-manifest.7d1f97344800b0a90225bc506474be57.js",
+    "service-worker.js": "/cipher-decoder/service-worker.js",
+    "static/css/main.e83ad08a.chunk.css.map": "/cipher-decoder/static/css/main.e83ad08a.chunk.css.map",
+    "static/js/2.c06d01a7.chunk.js.LICENSE.txt": "/cipher-decoder/static/js/2.c06d01a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e120b3a.js",
-    "static/js/2.0fdc65cb.chunk.js",
+    "static/js/runtime-main.6b3b8511.js",
+    "static/js/2.c06d01a7.chunk.js",
     "static/css/main.e83ad08a.chunk.css",
-    "static/js/main.c5e58281.chunk.js"
+    "static/js/main.4df1e76f.chunk.js"
   ]
 }
